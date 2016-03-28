@@ -1,0 +1,27 @@
+{
+  "name": "personal_site_v3",
+  "version": "1.0.0",
+  "description": "a personal site made using Angular and Gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdj92/portfolio.git"
+  },
+  "author": "Scott Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottdj92/portfolio/issues"
+  },
+  "homepage": "https://github.com/scottdj92/portfolio#readme",
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "babel": "^6.5.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}

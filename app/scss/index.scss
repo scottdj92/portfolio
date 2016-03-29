@@ -1,8 +1,23 @@
 html {
 	color: #F8F8F8;
+	font-family: "Source Sans Pro";
 
 	body {
 		margin: 0;
+		ul {
+			display: inline-block;
+			li {
+				display: inline-block;
+				padding-right: 15px;
+				a {
+					&:hover {
+						color: #E049B5;
+						transition: color 0.2s linear;
+					}	
+				}
+				
+			}
+		}
 	}
 
 	.section-content {
@@ -14,6 +29,10 @@ html {
 		&.landing-content {
 			background-image: url('https://farm5.staticflickr.com/4123/4896964430_4a640501f5_b.jpg');
 			background-size: cover;
+			font-size: 30pt;
+		}
+		&.contact {
+			background-color: #E8E08C;
 		}
 	}
 
@@ -29,15 +48,12 @@ html {
 			text-decoration: none;
 			position: relative;
 			left: 3em;
+			color: #F8F8F8;
 		}
 		.nav-links {
-			display: inline-block;
 			float: right;
 			position: relative;
-			right: 3em;
-			li {
-				display: inline-block;
-			}
+			right: 5em;
 		}
 	}
 
@@ -48,6 +64,47 @@ html {
 
 	.work {
 		color: black;
+	}
+
+	.contact {
+		padding: 6% 10%;
+		h1 {
+			& strong {
+				color: #E049B5;
+			}
+		}
+		form {
+			font-family: "Hilde Sharp";
+			font-size: 14pt;
+			color: #43221D;
+			box-shadow: -3px 2px 6px;
+			padding: 30px;
+			input {
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-color: #6B4D47;
+				background: none;
+				&:focus {
+					outline: none;
+				}
+			}
+			.form-button {
+				&:hover {
+					background: #332B2A;
+					transition: background 0.2s linear;
+					color: #CC9D99;
+				}
+			}
+		}
+	}
+
+	.footer {
+		color: black;
+		.github:before {
+			font-family: "FontAwesome";
+			before: '/f092';
+		}
 	}
 }
 

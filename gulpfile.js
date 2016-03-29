@@ -36,11 +36,20 @@ gulp.task('lint', function() {
 //Scss
 gulp.task('styles', function() {
 	return gulp.src('app/scss/*.scss')
-	.pipe(sass().on('error', sass.logError))
+	.pipe(sass({
+		style: 'compressed',
+		loadPath: './dist/fonts'
+	}).on('error', sass.logError))
 	.pipe(autoprefix({
 			browsers: ['last 2 versions']
 		}))
 	.pipe(gulp.dest('dist/css'));
+});
+
+//font-awesome
+gulp.task('icons', function() {
+	return gulp.src('./node_modules/font-awesome/fonts/**.*')
+	.pipe(gulp.dest('dist/fonts'));
 });
 
 //Watch
@@ -51,4 +60,4 @@ gulp.task('watch', function() {
 });
 //Default
 
-gulp.task('default', ['connect', 'lint', 'browserify', 'styles', 'watch']);
+gulp.task('default', ['connect', 'lint', 'browserify', 'icons', 'styles', 'watch']);

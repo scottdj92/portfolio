@@ -10,6 +10,10 @@ html {
 				display: inline-block;
 				padding-right: 15px;
 				a {
+					text-decoration: none;
+					&:visited {
+						color: black;
+					}
 					&:hover {
 						color: #E049B5;
 						transition: color 0.2s linear;
@@ -31,6 +35,9 @@ html {
 			background-size: cover;
 			font-size: 30pt;
 		}
+		&.work {
+			color: black;
+		}
 		&.contact {
 			background-color: #E8E08C;
 		}
@@ -45,10 +52,10 @@ html {
 		width: 100%;
 
 		a {
-			text-decoration: none;
 			position: relative;
 			left: 3em;
 			color: #F8F8F8;
+			text-decoration: none;
 		}
 		.nav-links {
 			float: right;

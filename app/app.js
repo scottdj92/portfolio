@@ -2,13 +2,13 @@ require('angular');
 //import modules here
 var MainController = require('./controllers/MainController');
 var WorkController = require('./controllers/WorkController');
-var ContactController = require('./controllers/ContactController');
+var WorkDetailController = require('./controllers/WorkDetailController');
 
 
 var app = angular.module('app', [require('angular-route')]);
 app.controller('MainController', ['$scope', MainController]);
 app.controller('WorkController', ['$scope', WorkController]);
-app.controller('ContactController', ['$scope', ContactController]);
+app.controller('WorkDetailController', ['$scope', WorkDetailController]);
 
 app.config(['$routeProvider',
 	function($routeProvider) {

@@ -4,5 +4,18 @@ module.exports = function($scope) {
 	$scope.mainMessage = 'Work';
 	$scope.subtitleMessage = 'Some of my work';
 	$scope.contactLine = "I'm Scott, but you can call me";
-	$scope.contactHook = 'anytime';
+	$scope.contactHook = 'anytime.';
+
+	$scope.master = {};
+
+	$scope.reset = function(form) {
+		if (form) {
+			form.$setPristine();
+			form.$setUntouched();
+		}
+	};
+
+	$scope.send = function(user) {
+		//$http request for email to me
+	};
 };

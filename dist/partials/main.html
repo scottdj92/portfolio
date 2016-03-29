@@ -1,0 +1,26 @@
+<div ng-controller="MainController" class='main'>
+	<section class='section-content landing-content'>
+		<h1>{{message}}</h1>
+		<h4>{{subtitle}}</h4>
+	</section>
+	<section class='section-content'>
+		<h1>{{mainMessage}}</h1>
+		<h2>{{subtitleMessage}}</h2>
+		<div class="selected-portfolio">
+			<p>work here</p>	
+		</div>
+	</section>
+	<section class='section-content contact'>
+		<h1>{{contactLine}} <strong>{{contactHook}}</strong></h1>
+		<form name='contact' class='contact-form' novalidate>
+			Name: <input type='text' ng-model='user.name' name='uName' required/>
+			<br/>
+			Email: <input type='email' ng-model='user.email' name='uEmail' required/>
+			<br/>
+			Message: <input type='text' ng-model='user.msg' name='uMsg' required/>
+			<br/>
+			<input class="form-button reset" type='reset' ng-click='reset(form)' value='Reset'/>
+			<input class="form-button submit" type='submit' ng-click='send(user)' value='Submit'/>
+		</form>
+	</section>
+</div>

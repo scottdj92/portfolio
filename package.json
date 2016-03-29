@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/scottdj92/portfolio.git"
   },
+  "private": true,
   "author": "Scott Jones",
   "license": "ISC",
   "bugs": {
@@ -32,6 +33,7 @@
   },
   "dependencies": {
     "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
     "font-awesome": "^4.5.0"
   }
 }

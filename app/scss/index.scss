@@ -1,14 +1,10 @@
-h1 {
-	color: #bada55;
-}
-
 html {
 	color: #F8F8F8;
 
 	body {
 		max-width: 960px;
 		margin: 0 auto;
-		background-image: url('https://farm7.staticflickr.com/6229/7029408609_4423558b21_b.jpg');
+		background-image: url('https://farm5.staticflickr.com/4123/4896964430_4a640501f5_b.jpg');
 		background-size: cover;
 	}
 
@@ -17,7 +13,7 @@ html {
 		margin-left: 5px;
 		margin-right: 5px;
 		margin-bottom: 5px;
-		
+
 		a {
 			text-decoration: none;
 		}
@@ -30,7 +26,9 @@ html {
 	}
 
 	.main {
-
+		text-align: center;
+		color: black;
+		margin-top: 12em;
 	}
 }
 

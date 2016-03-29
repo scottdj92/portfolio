@@ -3,6 +3,16 @@
 		<h1>{{message}}</h1>
 		<h4>{{subtitle}}</h4>
 	</section>
+	<section class='section-content about'>
+		<h1>{{aboutHook}}</h1>
+		<p>{{bio}}</p>
+		<ul>
+			<li ng-repeat='skill in skills'>
+				<img src="{{skill.src}}"/>
+				<span>{{skill.name}}</span>
+			</li>
+		</ul>
+	</section>
 	<section class='section-content work'>
 		<h1>{{mainMessage}}</h1>
 		<h2>{{subtitleMessage}}</h2>

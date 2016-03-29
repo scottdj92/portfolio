@@ -8,6 +8,7 @@ var connect = require('gulp-connect');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var gutil = require('gulp-util');
+var autoprefix = require('gulp-autoprefixer');
 
 //Server
 gulp.task('connect', function() {
@@ -36,6 +37,9 @@ gulp.task('lint', function() {
 gulp.task('styles', function() {
 	return gulp.src('app/scss/*.scss')
 	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefix({
+			browsers: ['last 2 versions']
+		}))
 	.pipe(gulp.dest('dist/css'));
 });
 

@@ -2,12 +2,14 @@ html {
 	color: #F8F8F8;
 
 	body {
+		margin: 0;
 	}
 
 	.section-content {
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		padding: 19% 10%;
 
 		&.landing-content {
 			background-image: url('https://farm5.staticflickr.com/4123/4896964430_4a640501f5_b.jpg');
@@ -42,7 +44,6 @@ html {
 	.main {
 		text-align: center;
 		color: black;
-		padding: 19% 10%;
 	}
 
 	.work {

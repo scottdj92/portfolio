@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="app">
+<head>
+	<title>Scott Jones &bull; UI &bull; UX</title>
+	<link rel = "stylesheet" href = 'css/index.css' type = 'text/css'/>
+	<script type="text/javascript" src='js/main.js'></script>
+</head>
+<body>
+	<header class="header-nav">
+		<a href="#">SJ</a>
+		<ul class="nav-links">
+			<li>About</li>
+			<li>Work</li>
+			<li>Contact</li>
+			<li>Resume</li>
+		</ul>
+	</header>
+	<section class='section-content landing-content'>
+		<div ng-controller="MainController" class='main'>
+			<h1>{{message}}</h1>
+			<h4>{{subtitle}}</h4>
+		</div>
+	</section>
+	<section class='section-content'>
+		<div ng-controller="WorkController" class="work">
+			<h1>{{mainMessage}}</h1>
+			<h2>{{subtitleMessage}}</h2>
+			<div class="selected-portfolio">
+				<p>work here</p>
+			</div>
+		</div>
+	</section>
+	<section class='section-content'>
+		<div ng-controller='ContactController' class='contact'>
+			<h1>{{contact}}</h1>
+		</div>
+	</section>
+</body>
+</html>

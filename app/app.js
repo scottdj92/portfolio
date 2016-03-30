@@ -10,8 +10,8 @@ app.controller('MainController', ['$scope', MainController]);
 app.controller('WorkController', ['$scope', WorkController]);
 app.controller('WorkDetailController', ['$scope', WorkDetailController]);
 
-app.config(['$routeProvider',
-	function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider',
+	function($routeProvider, $locationProvider) {
 		$routeProvider.when('/', {
 			templateUrl: 'partials/main.html',
 			controller: 'MainController'
@@ -27,4 +27,6 @@ app.config(['$routeProvider',
 		otherwise({
 			redirectTo: '/'
 		});
+
+		$locationProvider.html5Mode(true);
 	}]);

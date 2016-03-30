@@ -5,11 +5,11 @@
 	</section>
 	<section class='section-content about'>
 		<h1>{{aboutHook}}</h1>
-		<p>{{bio}}</p>
+		<p>Scott Jones works for <strong><a class='companyLink' href="http://www.sapientnitro.com">SapientNitro,<strong></a> one of the leading digital agencies in America.</p>
+		<p>Scott is proficient in the following:</p>
 		<ul>
 			<li ng-repeat='skill in skills'>
-				<img src="{{skill.src}}"/>
-				<span>{{skill.name}}</span>
+				<a href="{{skill.src}}">{{skill.name}}</a>
 			</li>
 		</ul>
 	</section>
@@ -17,7 +17,8 @@
 		<h1>{{mainMessage}}</h1>
 		<h2>{{subtitleMessage}}</h2>
 		<div class="selected-portfolio">
-			<p>work here</p>	
+			<p>work here</p>
+			<a href="/work">Work</a>
 		</div>
 	</section>
 	<section class='section-content contact'>

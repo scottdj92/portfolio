@@ -7,30 +7,34 @@ module.exports = function($scope) {
 	$scope.contactHook = 'anytime.';
 
 	$scope.aboutHook = 'Who am I?';
-	$scope.bio = '';
 
 	$scope.skills = [
 	  {
 	    "name": "Backbone.js",
-	    "src": "https://upload.wikimedia.org/wikipedia/commons/2/20/Backbone.js_logo.svg"
+	    "src": "http://backbonejs.org/"
 	  },
 	  {
 	  	"name": "Angular.js",
-	  	"src": "https://raw.githubusercontent.com/angular/angular.js/master/images/logo/AngularJS-Shield.exports/AngularJS-Shield-small.png"
+	  	"src": "http://angularjs.org"
 	  },
 	  {
 	  	"name": "Adobe Creative Suite",
-	  	"src": "https://worldvectorlogo.com/logos/creative-cloud-cc.svg"
+	  	"src": "http://www.adobe.com/creativecloud.html"
 	  },
 	  {
 	  	"name": "WordPress",
 	  	"src": ""
 	  },
 	  {
-	  	"name": "",
-	  	"src": ""
+	  	"name": "HTML5"
+	  },
+	  {
+	  	"name": "CSS3"
+	  },
+	  {
+	  	"name": "Guitar"
 	  }
-	]
+	];
 
 	$scope.master = {};
 
